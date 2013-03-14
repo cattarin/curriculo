@@ -1,0 +1,27 @@
+<?=$this->doctype()?>
+<html lang="pt-br">
+    
+    <head>
+        <?=
+            $this->headMeta() . PHP_EOL . 
+            $this->headTitle('Curriculo')->setSeparator(' - ') . PHP_EOL .
+            $this->headLink()
+                    ->appendStylesheet($this->baseUrl() . '/assets/css/bootstrap.min.css')
+                    ->appendStylesheet($this->baseUrl() . '/assets/css/painel.min.css'). PHP_EOL .
+            $this->headLink(array(
+                            'rel' => 'shortcut icon',
+                            'href' => '/assets/img/favicon.ico'),
+                            'PREPEND'). PHP_EOL .
+            $this->headScript()
+                    ->appendFile($this->baseUrl() . '/assets/js/jquery.min.js')
+                    ->appendFile($this->baseUrl() . '/assets/js/bootstrap.min.js')
+                    ->appendFile($this->baseUrl() . '/assets/js/less-1.3.0.min.js');
+        ?>
+    </head>
+    
+    <body>
+        <?php echo $this->layout()->content; ?>
+    </body>
+    
+    
+</html>
