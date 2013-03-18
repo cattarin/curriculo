@@ -13,18 +13,17 @@
             $this->headTitle('Curriculo')->setSeparator(' - ') . PHP_EOL .
             $this->headLink()
                     ->appendStylesheet($this->baseUrl() . '/assets/css/bootstrap.min.css')
-                    ->appendStylesheet($this->baseUrl() . '/assets/css/painel.min.css')
+                    ->appendStylesheet($this->baseUrl() . '/assets/css/base.css')
                     . PHP_EOL .
             $this->headScript()
-                    ->appendFile($this->baseUrl() . '/assets/js/jquery.min.js')
+                    ->appendFile($this->baseUrl() . '/assets/js/jquery.js')
                     ->appendFile($this->baseUrl() . '/assets/js/bootstrap.min.js')
-                    ->appendFile($this->baseUrl() . '/assets/js/less-1.3.0.min.js');
+                    ->appendFile($this->baseUrl() . '/assets/js/base.js');
         ?>
     </head>
     
     <body>
         <?php echo $this->layout()->content; ?>
     </body>
-    
     
 </html>
